@@ -1,4 +1,4 @@
-# FPGA Vending Machine 🚀
+# FPGA Vending Machine 
 
 ## Overview
 This project implements a **Verilog-based vending machine** using a **finite state machine (FSM)** approach. The vending machine accepts **quarters** as input and dispenses either **soda (0.5$) or candy (0.25$)** based on the amount inserted. The design is implemented on a Nexys-4 artix-7 fpga board and includes a **seven-segment display** for more user interaction.
@@ -50,15 +50,16 @@ To test the design before FPGA implementation:
 ## 📂 Repository Structure
 ```
 📂 src/				# Verilog source files 
+   ├── FSMVending.v       # FSM vending controller  
+   ├── clkDiv.v    	# Clock divider  
+   ├── segSevenDisplay.v  # Seven-segment display driver
    ├── topModule.v		# Top-level module 
-   	├── FSMVending.v       # FSM vending controller  
-   	├── clkDiv.v    	# Clock divider  
-   	├── segSevenDisplay.v  # Seven-segment display driver  
              
-
 📂 testbench/      # Testbenches and simulations  
 📂 waveforms/      # Simulation waveform images  
-📂 docs/           # Documentation 
+📂 docs/           # Documentation
+   ├── sch.pdf		            # Top-level schematic
+   ├── schematic_top.pdf		# expanded Top-level schematic 
 ```
 
 ---
