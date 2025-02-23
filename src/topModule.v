@@ -42,14 +42,14 @@ module topModule(
     wire slow_CLK;
 
     // Instantiate Clock Divider (controlUnit)
-    controlUnit clk_divider (
+    clkDiv clk_divider (
         .CLK(CLK),       // 100 MHz input clock
         .RST(RST),       // Reset
         .slow_CLK(slow_CLK) // Output: 10 Hz clock
     );
         
     // Instantiate FSM Unit
-    FSMUnit fsm_vend (
+    FSMVending fsm_vend (
         .CLK(CLK), // 100MHz for fast digit refresh
         .slow_CLK(slow_CLK),  // 10Hz clock signal
         .RST(RST),            // Reset signal
