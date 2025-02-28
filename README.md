@@ -1,7 +1,7 @@
 # FPGA Vending Machine 
 
 ## Overview
-This project implements a **Verilog-based vending machine** using a **finite state machine (FSM)** approach. The vending machine accepts **quarters** as input and dispenses either **soda (0.5$) or candy (0.25$)** based on the amount inserted. The design is implemented on a Nexys-4 artix-7 fpga board and includes a **seven-segment display** for more user interaction.
+This project implements a **Verilog-based vending machine** using a **finite state machine (FSM)** approach. The vending machine accepts **quarters** as input and dispenses either **soda ($0.5) or candy ($0.25)** based on the amount inserted. The design is implemented on a Nexys-4 artix-7 fpga board and includes a **seven-segment display** for more user interaction.
 
 ## Features
 ✅ **Finite State Machine (FSM)** to control vending logic  
